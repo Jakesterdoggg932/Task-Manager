@@ -9,7 +9,7 @@ import AboutPage from './Components/Bookkeeping/AboutPage';
 import { Route, Routes } from 'react-router-dom';
 import { Authenticator } from '@aws-amplify/ui-react';
 import { Amplify } from 'aws-amplify';
-import outputs from "../amplify_outputs.json";
+import outputs from "./amplify_outputs.json";
 import '@aws-amplify/ui-react/styles.css';
 
 Amplify.configure(outputs);
