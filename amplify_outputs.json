@@ -1,12 +1,13 @@
 {
   "auth": {
-    "user_pool_id": "us-east-1_4E4rjz8m5",
+    "user_pool_id": "us-east-1_9LcyvRW7k",
     "aws_region": "us-east-1",
-    "user_pool_client_id": "3v2mdnseeo1rh9suhiubrv6jv2",
-    "identity_pool_id": "us-east-1:c4246d90-89d4-4dae-bd38-4e76a5f12eda",
+    "user_pool_client_id": "7e9ptlpm93tum5o3hlkjafg8bj",
+    "identity_pool_id": "us-east-1:2ee86123-4861-48cb-b216-281e838d674d",
     "mfa_methods": [],
     "standard_required_attributes": [
-      "email"
+      "email",
+      "preferred_username"
     ],
     "username_attributes": [
       "email"
@@ -26,7 +27,7 @@
     "unauthenticated_identities_enabled": true
   },
   "data": {
-    "url": "https://wd4zv7s2gbedjlayxtjkobcyte.appsync-api.us-east-1.amazonaws.com/graphql",
+    "url": "https://m5lsufeqdnhjjhybj2fq46rguy.appsync-api.us-east-1.amazonaws.com/graphql",
     "aws_region": "us-east-1",
     "default_authorization_type": "AWS_IAM",
     "authorization_types": [
@@ -104,6 +105,27 @@
       "enums": {},
       "nonModels": {}
     }
+  },
+  "storage": {
+    "aws_region": "us-east-1",
+    "bucket_name": "amplify-contactsapp-jacob-amplifynotesdrivebucket1-ewtzmwfn7u5q",
+    "buckets": [
+      {
+        "name": "amplifyNotesDrive",
+        "bucket_name": "amplify-contactsapp-jacob-amplifynotesdrivebucket1-ewtzmwfn7u5q",
+        "aws_region": "us-east-1",
+        "paths": {
+          "media/${cognito-identity.amazonaws.com:sub}/*": {
+            "entityidentity": [
+              "get",
+              "list",
+              "write",
+              "delete"
+            ]
+          }
+        }
+      }
+    ]
   },
   "version": "1.4"
 }

@@ -11,7 +11,7 @@ function HomePage() {
                         <br /><br />
                         Blah blah blah
                     </p>
-                    <Button href="/register" variant="outline-primary">Get Started</Button>
+                    <Button href="/login" variant="outline-primary">Get Started</Button>
                 </Col>
             </Row>
         </Container>
